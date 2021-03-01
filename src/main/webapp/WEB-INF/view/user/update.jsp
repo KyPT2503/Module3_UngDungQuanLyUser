@@ -8,30 +8,30 @@
 </head>
 <body>
 <h1>Update:</h1>
-<form action="${pageContext.request.contextPath}/users?action=update" method="post">
+<form action="${pageContext.request.contextPath}/user/update" method="post">
     <table>
         <tr>
             <th>Id</th>
             <td><label>
-                <input type="text" name="id" value="${user.getId()}">
+                <input type="text" name="id" value="${id}">
             </label></td>
         </tr>
         <tr>
             <th>Name</th>
             <td><label>
-                <input type="text" name="name" value="${user.getName()}">
+                <input type="text" name="name" value="${name}">
             </label></td>
         </tr>
         <tr>
             <th>Country</th>
             <td><label>
-                <input type="text" name="country" value="${user.getCountry()}">
+                <input type="text" name="country" value="${country}">
             </label></td>
         </tr>
         <tr>
             <th>Email</th>
             <td><label>
-                <input type="text" name="email" value="${user.getEmail()}">
+                <input type="text" name="email" value="${email}">
             </label></td>
         </tr>
         <tr>

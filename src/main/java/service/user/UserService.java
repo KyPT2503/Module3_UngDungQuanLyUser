@@ -10,9 +10,10 @@ public class UserService implements IUserService {
     private Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydatabase", "root", "250399");
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
             System.out.println("Driver not found.");
         } catch (SQLException e) {
             System.out.println("Can't connect.");

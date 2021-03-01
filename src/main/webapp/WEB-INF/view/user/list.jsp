@@ -22,13 +22,13 @@
             <td>${user.getCountry()}</td>
             <td>${user.getEmail()}</td>
             <td>
-                <a href="${pageContext.request.contextPath}/users?action=update&id=${user.getId()}&name=${user.getName()}&country=${user.getCountry()}&email=${user.getEmail()}">Update</a>
+                <a href="${pageContext.request.contextPath}/user/update?id=${user.getId()}&name=${user.getName()}&country=${user.getCountry()}&email=${user.getEmail()}">Update</a>
             </td>
-            <td><a href="${pageContext.request.contextPath}/users?action=remove&id=${user.getId()}">Remove</a></td>
+            <td><a href="${pageContext.request.contextPath}/user/remove?id=${user.getId()}">Remove</a></td>
         </tr>
     </c:forEach>
 </table>
-<a href="${pageContext.request.contextPath}/user/add.jsp">Create new User</a>
+<a href="${pageContext.request.contextPath}/user/add">Create new User</a>
 <form action="${pageContext.request.contextPath}/users?action=find" method="post">
     <label for="value"></label><input type="text" name="value" id="value" placeholder="Search ...">
     <label for="option"></label><select name="find_by" id="option">

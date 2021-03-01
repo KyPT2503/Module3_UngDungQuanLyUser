@@ -7,7 +7,7 @@
     <title>Create new user</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/users?action=add" method="post">
+<form action="${pageContext.request.contextPath}/user/add" method="post">
     <table>
         <tr>
             <th>Id</th>
